@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#{title}</title>
+    <!-- we used ../ to move one directory out (from views) 
+    also intent before include is essential-->
+    style
+     include ../static/style.css  
+    
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Contact Us</a></li>
+        </ul>
+    </nav>  
+    <div class="container">  
+    <h1>Get the Gym Membership only for $60 - Hurry!</h1> 
+    <!-- <p>
+    | #{content}
+    </p> -->
+    <form action="/" method="post" id="contact">
+        <input type="text"  name="name"  id="name" placeholder="Enter Your Name">
+        <input type="number"  name="age"  id="age" placeholder="Enter Your Age">
+        <input type="text"  name="gender" id="gender" placeholder="Enter Your Gender">
+        <textarea name="address" id="address" cols="30"  rows="5" placeholder="Enter Your Address"></textarea>
+        <textarea name="more"  id="more" cols="30" rows="8" placeholder="Enter More About You..."></textarea>
+        <button class="btn">Submit</button>
+    </form>
+    
+
+</div>
+</body>
+</html>
